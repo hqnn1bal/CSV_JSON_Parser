@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 17)
+project(exec)
+add_subdirectory(CSV_Parser)
+add_subdirectory(JSON_Parser)
+add_executable(exec ./source/main.cpp)
+target_link_libraries(exec CSV_Parser)
+target_link_libraries(exec JSON_Parser)

@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 17)
+project(JSON_Parser)
+add_library(JSON_Parser ./source/JSON_Parser)
+target_include_directories(JSON_Parser PUBLIC include)

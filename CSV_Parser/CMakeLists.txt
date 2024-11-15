@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 17)
+project(CSV_Parser)
+add_library(CSV_Parser source/CSV_Parser.cpp)
+target_include_directories(CSV_Parser PUBLIC include)
